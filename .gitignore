@@ -1,0 +1,150 @@
+# ============================================
+# GITIGNORE - Attendance Payroll System
+# ============================================
+
+# ============================================
+# BACKEND - Java / Maven / Spring Boot
+# ============================================
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Spring Boot
+HELP.md
+
+# Build
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# ============================================
+# FRONTEND - Node.js / React / Vite
+# ============================================
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Build
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+loglevel.log*
+
+# ============================================
+# IDE - IntelliJ IDEA / VS Code / Eclipse
+# ============================================
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# Eclipse / STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Visual Studio
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ============================================
+# OS Specific
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ============================================
+# Database
+# ============================================
+
+# H2 Database files
+*.db
+*.trace.db
+*.lock.db
+
+# ============================================
+# Other
+# ============================================
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.bak
+*.cache
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Compiled files
+*.class
+*.jar
+!gradle-wrapper.jar
+!maven-wrapper.jar
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# ============================================
+# Project Specific - DO NOT IGNORE
+# ============================================
+
+# Keep important config files
+!pom.xml
+!package.json
+!vite.config.js
+!tailwind.config.js
+!postcss.config.js
+
