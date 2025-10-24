@@ -1,12 +1,10 @@
 services:
   - type: web
     name: attendance-payroll-backend
-    env: java
+    env: docker
     plan: free
     region: singapore
-    rootDir: Source/backend
-    buildCommand: mvn clean package -DskipTests
-    startCommand: java -jar target/*.jar
+    dockerfilePath: Source/backend/Dockerfile
     envVars:
       - key: JAVA_VERSION
         value: 17
