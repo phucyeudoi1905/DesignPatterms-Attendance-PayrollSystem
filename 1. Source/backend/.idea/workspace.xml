@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa86ee74-d057-492e-99d9-3b6d5f16d80f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DOCUMENTATION.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/AttendancePayrollSystemApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/config/ApplicationConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/controller/AttendanceController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/controller/DashboardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/controller/EmployeeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/controller/PayrollController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/BaseSalary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/LunchAllowanceDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/OvertimeDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/PerformanceBonusDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/SalaryComponent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/SalaryDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/decorator/TransportationAllowanceDecorator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/model/Attendance.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/model/ContractType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/model/DashboardStats.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/model/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/model/Payroll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/repository/AttendanceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/repository/EmployeeRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/repository/PayrollRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/service/AttendanceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/service/DashboardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/service/PayrollService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/strategy/FixedSalaryCalculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/strategy/HourlySalaryCalculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/strategy/KpiBasedSalaryCalculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/strategy/ProductBasedSalaryCalculation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/java/com/attendance/strategy/SalaryCalculationStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../backend/src/main/resources/data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/pages/AttendanceManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/pages/Dashboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/pages/EmployeeManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/pages/PayrollManagement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/src/services/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../frontend/vite.config.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="34VQUHYASHae70gkyPI0shWIWFd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.AttendancePayrollSystemApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/web/DesignPattern/DesignPatterms-Attendance-PayrollSystem/1. Source/backend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="AttendancePayrollSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="attendance-payroll-system" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.attendance.AttendancePayrollSystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.25557.131" />
+        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-IU-252.25557.131" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa86ee74-d057-492e-99d9-3b6d5f16d80f" name="Changes" comment="" />
+      <created>1761296273922</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761296273922</updated>
+      <workItem from="1761296275455" duration="1635000" />
+      <workItem from="1761323356781" duration="722000" />
+      <workItem from="1761325204984" duration="123000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

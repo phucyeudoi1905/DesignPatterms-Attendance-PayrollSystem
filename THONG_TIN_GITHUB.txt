@@ -1,0 +1,223 @@
+═══════════════════════════════════════════════════════════════════
+   THÔNG TIN DỰ ÁN GITHUB - ATTENDANCE PAYROLL SYSTEM
+═══════════════════════════════════════════════════════════════════
+
+🎯 TÊN DỰ ÁN
+   Attendance Payroll System - Hệ thống Quản lý Chấm công và Tính lương
+
+📚 MÔ TẢ
+   Ứng dụng web fullstack áp dụng Design Patterns để quản lý nhân viên,
+   chấm công và tính lương tự động với 4 loại hợp đồng khác nhau.
+
+🔗 LINK GITHUB REPOSITORY
+   https://github.com/[username]/AttendancePayrollSystem
+   
+   (Thay [username] bằng tên GitHub của bạn)
+
+📋 DESIGN PATTERNS ÁP DỤNG
+   1. Strategy Pattern    - Tính lương linh hoạt cho 4 loại hợp đồng
+   2. Singleton Pattern   - Quản lý cấu hình toàn cục
+   3. Decorator Pattern   - Thêm phụ cấp và thưởng vào lương
+
+🛠️ CÔNG NGHỆ SỬ DỤNG
+   
+   Backend:
+   - Java 17
+   - Spring Boot 3.2.0
+   - Spring Data JPA
+   - H2 Database (in-memory)
+   - Maven
+   
+   Frontend:
+   - React 18.x
+   - React Router DOM
+   - Axios
+   - Tailwind CSS
+   - Lucide React Icons
+   - Vite
+
+📁 CẤU TRÚC DỰ ÁN
+
+   ├── 1. Source/
+   │   ├── backend/          # Spring Boot Backend
+   │   │   ├── src/
+   │   │   │   └── main/
+   │   │   │       ├── java/com/attendance/
+   │   │   │       │   ├── strategy/         # Strategy Pattern
+   │   │   │       │   ├── decorator/        # Decorator Pattern
+   │   │   │       │   ├── config/           # Singleton Pattern
+   │   │   │       │   ├── controller/       # REST Controllers
+   │   │   │       │   ├── service/          # Business Logic
+   │   │   │       │   ├── repository/       # Data Access
+   │   │   │       │   └── model/            # JPA Entities
+   │   │   │       └── resources/
+   │   │   │           ├── application.properties
+   │   │   │           └── data.sql
+   │   │   └── pom.xml
+   │   │
+   │   └── frontend/         # React Frontend
+   │       ├── src/
+   │       │   ├── pages/
+   │       │   │   ├── Dashboard.jsx
+   │       │   │   ├── EmployeeManagement.jsx
+   │       │   │   ├── AttendanceManagement.jsx
+   │       │   │   └── PayrollManagement.jsx
+   │       │   ├── services/
+   │       │   │   └── api.js
+   │       │   ├── App.jsx
+   │       │   └── main.jsx
+   │       ├── package.json
+   │       └── vite.config.js
+   │
+   ├── 2. ThucThi/          # (Để trống - không cần file tự chạy)
+   │
+   ├── 3. Database/
+   │   ├── data.sql                    # Dữ liệu mẫu
+   │   ├── application.properties      # Cấu hình database
+   │   └── README_DATABASE.md          # Hướng dẫn database
+   │
+   ├── 4. Doc/              # (Thêm báo cáo Word tại đây)
+   │
+   └── THONG_TIN_GITHUB.txt # File này
+
+🚀 HƯỚNG DẪN CHẠY DỰ ÁN
+
+   📌 Yêu cầu:
+   - Java 17+ (hoặc IntelliJ IDEA)
+   - Node.js 18+
+   - Git
+
+   📌 Bước 1: Clone repository
+   git clone https://github.com/[username]/AttendancePayrollSystem.git
+   cd AttendancePayrollSystem
+
+   📌 Bước 2: Chạy Backend
+   cd backend
+   mvn spring-boot:run
+   
+   Hoặc trong IntelliJ IDEA:
+   - Mở folder backend
+   - Run AttendancePayrollSystemApplication.java
+   
+   Backend: http://localhost:8080
+
+   📌 Bước 3: Chạy Frontend
+   cd frontend
+   npm install
+   npm run dev
+   
+   Frontend: http://localhost:5173
+
+✨ TÍNH NĂNG CHÍNH
+
+   1. Dashboard - Thống kê real-time, tự động refresh 30s
+   2. Quản lý Nhân viên - CRUD, 4 loại hợp đồng
+   3. Chấm công - Ghi nhận giờ làm/sản phẩm
+   4. Tính lương - Tự động tính theo Strategy Pattern
+
+🎨 DESIGN PATTERNS CHI TIẾT
+
+   📊 Strategy Pattern (Behavioral)
+   - Interface: SalaryCalculationStrategy
+   - Concrete Strategies:
+     • FixedSalaryCalculation
+     • HourlySalaryCalculation
+     • ProductBasedSalaryCalculation
+     • KpiBasedSalaryCalculation
+   - Context: PayrollService
+   - Lợi ích: Dễ mở rộng, tuân thủ Open/Closed Principle
+
+   🔧 Singleton Pattern (Creational)
+   - Class: ApplicationConfig
+   - Thread-safe implementation
+   - Quản lý cấu hình toàn cục
+   - Lợi ích: Single instance, truy cập toàn cục
+
+   🎁 Decorator Pattern (Structural)
+   - Component: SalaryComponent
+   - Base: BaseSalary
+   - Decorators:
+     • TransportationAllowanceDecorator
+     • LunchAllowanceDecorator
+     • PerformanceBonusDecorator
+     • OvertimeDecorator
+   - Lợi ích: Thêm chức năng động, không sửa code gốc
+
+🔗 API ENDPOINTS
+
+   Base URL: http://localhost:8080/api
+
+   Dashboard:
+   GET  /dashboard/stats      - Thống kê tổng quan
+   GET  /dashboard/config     - Cấu hình hệ thống
+
+   Employees:
+   GET    /employees          - Danh sách nhân viên
+   GET    /employees/{id}     - Chi tiết nhân viên
+   POST   /employees          - Thêm nhân viên
+   PUT    /employees/{id}     - Cập nhật nhân viên
+   DELETE /employees/{id}     - Xóa nhân viên
+
+   Attendance:
+   GET  /attendance/{employeeId}  - Lịch sử chấm công
+   POST /attendance                - Thêm chấm công
+
+   Payroll:
+   POST /payroll/calculate/{employeeId}  - Tính lương
+   GET  /payroll/{employeeId}            - Lịch sử lương
+
+📊 DỮ LIỆU MẪU
+
+   Hệ thống có sẵn 4 nhân viên mẫu:
+   
+   1. Nguyễn Văn An - Developer (FIXED)
+      Lương cố định: 15,000,000 VNĐ
+   
+   2. Trần Thị Bình - Part-time (HOURLY)
+      Lương theo giờ: 50,000 VNĐ/giờ
+   
+   3. Lê Văn Cường - Production Worker (PRODUCT_BASED)
+      Lương theo sản phẩm: 20,000 VNĐ/sản phẩm
+   
+   4. Phạm Thị Dung - Sales Manager (KPI_BASED)
+      Lương cơ bản: 12,000,000 VNĐ + KPI: 3,000,000 VNĐ
+
+📝 TÀI LIỆU THAM KHẢO
+
+   - README.md                         - Tổng quan dự án
+   - QUICK_START.md                    - Hướng dẫn nhanh
+   - DESIGN_PATTERNS_EXPLAINED.md      - Giải thích Design Patterns
+   - DESIGN_PATTERNS_DOCUMENTATION.md  - Technical reference
+   - CHANGELOG.md                      - Lịch sử phiên bản
+
+🎓 THÀNH VIÊN NHÓM
+
+   [Điền thông tin nhóm tại đây]
+   
+   Họ tên: MSSV_Hoten_TenDeTai_MTK
+   
+   Ví dụ:
+   - Nguyễn Văn A - 12345678
+   - Trần Thị B   - 87654321
+
+📅 THÔNG TIN NỘP BÀI
+
+   Hạn nộp: Thứ hai, 27 Tháng 10 2025, 1:58 PM
+   Đã mở:   Thứ tư, 22 Tháng 10 2025, 12:00 AM
+
+   Yêu cầu nộp:
+   ✅ 1. Source code (backend + frontend)
+   ✅ 2. Database files và scripts
+   ✅ 3. File thông tin GitHub (file này)
+   ⬜ 4. Báo cáo Word (thêm vào thư mục "4. Doc")
+   ⬜ 5. File tự chạy (không bắt buộc)
+
+📞 HỖ TRỢ
+
+   - GitHub Issues: [Link repository]/issues
+   - Email: [Email của bạn]
+
+═══════════════════════════════════════════════════════════════════
+              Made with ❤️ | Design Pattern Team | 2025
+═══════════════════════════════════════════════════════════════════
+
